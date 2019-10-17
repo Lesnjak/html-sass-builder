@@ -1,0 +1,33 @@
+@import '_variables';
+
+
+
+@font-face {
+  font-family: Roboto;
+  font-weight: $font-weight-light;
+  src: url('../fonts/Roboto/Roboto-Light.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: Roboto;
+  font-weight: $font-weight-regular;
+  src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: Roboto;
+  font-weight: $font-weight-medium;
+  src: url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: Roboto;
+  font-weight: $font-weight-bold;
+  src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype')
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: $font-weight-extra-bold;
+  src: url('../fonts/Roboto/Roboto-Black.ttf') format('truetype')
+}
+

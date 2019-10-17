@@ -1,0 +1,25 @@
+$font-size-small: 14px;
+$font-size-medium: 18px;
+$line-height-base: 22px;
+
+$font-weight-light: 100;
+$font-weight-regular: 200;
+$font-weight-medium: 300;
+$font-weight-bold: 400;
+$font-weight-semi-bold: 500;
+$font-weight-extra-bold: 600;
+
+$main-color: #171717;
+$white:#fff;
+
+
+@mixin unique-text(){
+  color: white;
+  -webkit-text-fill-color: $main-color; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  text-decoration: none;
+}
+
+
+

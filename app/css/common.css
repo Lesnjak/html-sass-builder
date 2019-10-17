@@ -1,0 +1,164 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: Roboto;
+  font-weight: 100;
+  src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Roboto;
+  font-weight: 200;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Roboto;
+  font-weight: 300;
+  src: url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Roboto;
+  font-weight: 600;
+  src: url("../fonts/Roboto/Roboto-Black.ttf") format("truetype"); }
+
+.container {
+  margin: 0 20px;
+  box-sizing: border-box;
+  height: 100%; }
+  @media (max-width: 480px) {
+    .container {
+      margin: 0 10px; } }
+  @media (min-width: 1270px) {
+    .container {
+      width: 100%;
+      max-width: 1270px;
+      margin: 0 auto; } }
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 200; }
+
+h1 {
+  font-size: 300px; }
+
+h2 {
+  font-size: 100px; }
+
+.header {
+  background-color: #171717;
+  min-height: 100vh; }
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 35px 0; }
+  .header__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 75px;
+    font-weight: 400;
+    transition: 0.3s; }
+  .header__logo:hover .header__text {
+    transform: translateX(0); }
+  .header__text {
+    transform: translateX(calc(-100% + 78px));
+    transition: 0.3s; }
+  .header__title {
+    padding: 60px 0 20px;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    box-sizing: border-box; }
+  .header__move {
+    height: 300vh;
+    text-align: center; }
+  .header__move-text {
+    font-weight: bold;
+    color: white;
+    -webkit-text-fill-color: #171717;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block; }
+    .header__move-text--fixed {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .header__contact-link {
+    font-weight: 400;
+    font-size: 48px;
+    color: white;
+    -webkit-text-fill-color: #171717;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-decoration: none; }
+
+.zoom {
+  width: 30%;
+  height: auto;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+  .zoom__1 {
+    position: absolute;
+    left: 100px;
+    width: 200px;
+    height: 150px;
+    background-color: #fff;
+    border: 10px solid #fff; }
+  .zoom__2 {
+    width: 200px;
+    height: 150px;
+    border: 10px solid #fff; }
+  .zoom__3 {
+    width: 200px;
+    height: 150px;
+    border: 10px solid #fff; }

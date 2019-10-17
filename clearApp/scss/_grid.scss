@@ -1,0 +1,53 @@
+$xxs: '(min-width: 320px)';
+$_xxs: '(max-width: 320px)';
+$xs: '(min-width: 480px)';
+$_xs: '(max-width: 480px)';
+$sm: '(min-width: 767px)';
+$_sm: '(max-width: 767px)';
+$md: '(min-width: 1024px)';
+$_md: '(max-width: 1024px)';
+$lg: '(min-width: 1270px)';
+$_lg: '(max-width: 1270px)';
+$xlg: '(min-width: 1500px)';
+
+$cols: 12;
+$gutter: 40px;
+%container {
+  margin: 0 20px;
+  box-sizing: border-box;
+  height: 100%;
+
+  @media #{$xxs} {
+    //width: 100%;
+  }
+  @media #{$_xs} {
+    margin: 0 10px;
+  }
+
+  @media #{$sm} {
+    //width: 730px
+  }
+
+  @media #{$md} {
+    //width: 970px
+  }
+
+  @media #{$lg} {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+@mixin container($align: space-between, $wrap: wrap) {
+  @extend %container;
+  justify-content: $align;
+  flex-wrap: $wrap;
+}
+
+@mixin col($num) {
+  width: calc(
+    (((100% - (#{$gutter} * (#{$cols} - 1))) / #{$cols}) * #{$num}) +
+      (#{$gutter} * (#{$num} - 1))
+  );
+}
